@@ -1,0 +1,3 @@
+D:\momentum_clonecode\momentum_clonecode\obj\Debug\momentum_clonecode.njsproj.AssemblyReference.cache
+D:\momentum_clonecode\momentum_clonecode\obj\Debug\momentum_clonecode.njsproj.CoreCompileInputs.cache
+D:\momentum_clonecode\momentum_clonecode\bin\Microsoft.NodejsTools.WebRole.dll
