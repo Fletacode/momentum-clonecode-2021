@@ -3,13 +3,21 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Momentum</title>
     
 
 </head>
 <body>
+    <header>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
     <h2 class="clock"></h2>
+    <h1 id="greeting" class="hidden"></h1>
     <form class="loginform ">
         <input required
                maxlength="15"
@@ -18,30 +26,55 @@
         <button>Log In</button>
 
     </form>
+    <main class="todo_bar">
+        <div>
+            <form class="todo-form">
+                <ul class="todo-list"></ul>
+                <input class="todo-forminput"
+                       required
+                       type="text"
+                       placeholder="What is your main focus for today?" />
+            </form>
+        </div>
+        <div>
+            <div class="todo-rightbox hidden">
+                <ul class="todo-list2"></ul>
+                <form class="todo-form2">
+                    
+                    <input class="todo-forminput2" type="text" placeholder="New todo" required />
+                </form>
+            </div>
+        </div>
+
+    </main>
+
     
-    <form class="todo-form">
-        <input class="todo-forminput"
-               required
-               type="text"
-               placeholder="plz write todo-list" />
-    </form>
-    <ul class="todo-list"></ul>
-    <div class="quote">
-        <span></span>
-        <span></span>
-    </div>
-    <h1 id="greeting" class="hidden"></h1>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
+
+    <footer>
+        <div>
+            <span></span>
+        </div>
+        <div class="quote">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="todo-button">
+            <button>Todo</button>
+        </div>
+    </footer>
+
+
+
+
+
     <script src="javascripts/Greet.js"></script>
     <script src="javascripts/Clock.js"></script>
     <script src="javascripts/Quote.js"></script>
     <script src="javascripts/Background.js"></script>
     <script src="javascripts/Todolist.js"></script>
+    <script src="javascripts/Todolist2.js"></script>
     <script src="javascripts/Geolocation.js"></script>
-
+    <script src="javascripts/todobutton.js"></script>
 </body>
 
 </html>

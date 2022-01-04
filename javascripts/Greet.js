@@ -6,20 +6,15 @@ const link = document.querySelector("a");
 const greeting = document.getElementById("greeting");
 const CSS_CLASS = "hidden";
 
-function Loginbtn(event) {
-    
-    event.preventDefault();
-    
-    
-    const username = loginInput.value;
-    
+function Loginbtn(event) {   
+    event.preventDefault(); 
+    const username = loginInput.value;  
     localStorage.setItem("username", username);
     loginform.classList.add(CSS_CLASS);
     paintGreet(username);
-    
 }
 function paintGreet(username) {
-    greeting.innerText = `hello ${username}`;
+    greeting.innerText = `Hello, ${username}.`;
     greeting.classList.remove(CSS_CLASS);
 }
 const saveusername = localStorage.getItem("username");

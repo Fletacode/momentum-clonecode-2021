@@ -10,15 +10,15 @@ function onGeoOk(position) {
     console.dir(position);
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    console.log(latitude);
-    console.log(longitude);
-    weather_h2.innerText = `lat:${latitude},long:${longitude}`;
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_ID}`;
+    
+  
+    
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_ID}&units=metric`;
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            weather_span1.innerText = data.name;
-            weather_span2.innerText = data.weather[0].main;
+            weather_span1.innerText = `${data.name}`;
+            weather_span2.innerText = `${data.weather[0].main}`;
         });
     
 }
@@ -28,3 +28,5 @@ function onGeoError() {
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+
+

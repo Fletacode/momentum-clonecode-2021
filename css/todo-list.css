@@ -1,0 +1,16 @@
+﻿.todo-list{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.todo-list > li{
+    font-size:40px;
+    color:white;
+}
+.todo-list >li > button{
+    font-size:40px;
+    border:none;
+    background-color:rgb(255, 255, 255,0);
+    color:tomato;
+}

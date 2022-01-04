@@ -1,0 +1,10 @@
+﻿.clock{
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    margin-top:350px;
+    font-size:180px;
+    margin-bottom:0px;
+}
+

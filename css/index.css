@@ -1,0 +1,17 @@
+﻿@import "background.css";
+@import "weather.css";
+@import "clock.css";
+@import "greeting.css";
+@import "loginform_input.css";
+@import "todo-form.css";
+@import "todo-list.css";
+@import "footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Shizuru&display=swap');
+.hidden{
+    display:none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+

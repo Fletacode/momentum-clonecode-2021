@@ -1,0 +1,29 @@
+﻿.loginform{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.loginform > input{
+    width:400px;
+    padding:20px 0px;
+    background-color:rgb(255, 255, 255,0);
+    border:none;
+    border-bottom:1px solid white;
+    color:white;
+    font-size:30px;
+}
+.loginform > input:focus-within{
+    outline:none;
+}
+.loginform > input::placeholder{
+    color:white;
+    font-size:30px;
+    
+}
+
+.loginform > button{
+    background-color:rgb(255, 255, 255,0);
+    border:none;
+    color:white;
+    font-size:20px;
+}

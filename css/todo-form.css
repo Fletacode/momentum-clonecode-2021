@@ -1,0 +1,93 @@
+﻿.todo-form{
+    display:flex;
+    
+    justify-content:flex-end;
+    align-items:center;
+    
+    
+}
+.collapse{
+    display:none;
+}
+.todo-formactive{
+    width:75%;
+}
+.todo-forminput {
+    background-color: rgb(255, 255, 255,0);
+    border: none;
+    border-bottom: 1px solid white;
+    width: 1000px;
+    height: 100px;
+    color: white;
+    font-size: 40px;
+}
+.todo-forminput:focus-within{
+    outline:none;
+}
+.todo-forminput::placeholder{
+    font-size:60px;
+    color:white;
+    text-align:center;
+}
+.todo_bar{
+    display:flex;
+    height:700px;
+}
+.todo_bar >div:first-child{
+    width:78%;
+    height:50%;
+}
+
+.todo_bar >div:last-child{
+    width:41%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:end;
+}
+.todo-list2{
+    color:white;
+    font-size:50px;
+}
+.todo-list2> li >button{
+    background-color:rgb(255, 255, 255,0);
+    color:tomato;
+    border:none;
+    font-size:40px;
+    
+}
+.todo-list2 > li > button:hover{
+    opacity:0.5;
+}
+.todo-rightbox{
+    background-color:rgb(10, 9, 9,0.5);
+    height:100%;
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    justify-content:flex-end;
+}
+.todo-forminput2{
+    border:none;
+    width:100%;
+    
+    background-color:rgb(10, 9, 9,0.5);
+    animation:fadeinout 1s linear infinite;
+    color:white;
+    font-size:30px;
+}
+.todo-forminput2:focus-within{
+    outline:none;
+    animation:none;
+}
+@keyframes fadeinout{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+

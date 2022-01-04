@@ -1,0 +1,44 @@
+﻿footer{
+    display:flex;
+    justify-content:space-evenly;
+}
+footer > div{
+    width:33%;
+}
+.quote{
+    width:50%;
+    color:white;
+    font-size:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.todo-button{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+   
+}
+.todo-button > button{
+    background-color:rgb(255, 255, 255,0);
+    color:white;
+    border:none;
+    font-size:80px;
+    font-weight:400;
+}
+@keyframes fadeinout {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.todo-button > button{
+    animation:fadeinout 3s ease-in-out  infinite;
+}
+.todo-button > button:focus{
+    animation:none;
+}
+
